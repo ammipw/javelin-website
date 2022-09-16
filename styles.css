@@ -1,0 +1,49 @@
+:root {
+    --border: 1px solid orange;
+    --p-sm: 8px;
+    --p-md: 16px;
+    --p-lg: 32px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    min-width: 600px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+tr:hover {
+    filter: brightness(90%);
+}
+
+tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+th, td {
+    padding: var(--p-md);
+}
+
+@media (min-width: 600px) {
+    section {
+        width: 80%;
+        margin: auto;
+    }
+}
