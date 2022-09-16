@@ -1,5 +1,5 @@
 :root {
-    --border: 1px solid orange;
+    --border: 1px solid #f0f0f0;
     --p-sm: 8px;
     --p-md: 16px;
     --p-lg: 32px;
@@ -20,13 +20,22 @@ section {
 }
 
 table {
-    border-collapse: collapse;
+    border: var(--border);
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
     width: 100%;
     text-align: center;
 }
 
+table button {
+    width: 100%;
+    height: 100%;
+    column-span: 100%;
+}
+
 tr:hover {
-    filter: brightness(90%);
+    filter: brightness(92%);
 }
 
 tr:nth-child(odd) {
@@ -41,9 +50,21 @@ th, td {
     padding: var(--p-md);
 }
 
+#toggleListBtn {
+    margin: auto;
+    padding: var(--p-sm) var(--p-lg);
+    display: block;
+    border: none;
+    margin-top: 8px;
+}
+
 @media (min-width: 600px) {
     section {
         width: 80%;
         margin: auto;
+    }
+
+    table {
+        border-radius: 16px;
     }
 }
