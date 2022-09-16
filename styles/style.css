@@ -1,8 +1,43 @@
+:root {
+    --border: 1px solid orange;
+    --p-sm: 8px;
+    --p-md: 16px;
+    --p-lg: 32px;
+}
+
 html, body {
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+tr:hover {
+    filter: brightness(90%);
+}
+
+tr:nth-child(even) {
+    background: lightblue;
+}
+
+tr:nth-child(odd) {
+    background: lightcyan;
+}
+
+th, td {
+    padding: var(--p-md);
 }
