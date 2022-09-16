@@ -50,6 +50,14 @@ th, td {
     padding: var(--p-md);
 }
 
+tr {
+    display: table-row;
+}
+
+tr[class='hidden']{
+    display: none;
+}
+
 #toggleListBtn {
     margin: auto;
     padding: var(--p-sm) var(--p-lg);
