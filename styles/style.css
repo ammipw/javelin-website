@@ -16,8 +16,8 @@ html, body {
 }
 
 section {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    min-width: 600px;
 }
 
 table {
@@ -40,4 +40,11 @@ tr:nth-child(odd) {
 
 th, td {
     padding: var(--p-md);
+}
+
+@media (min-width: 600px) {
+    section {
+        width: 80%;
+        margin: auto;
+    }
 }
